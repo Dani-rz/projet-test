@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.model.Users;
+import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
 
 @RestController
@@ -17,7 +17,7 @@ public class UserController {
 	UserRepository userRepository;
 	
 	@PostMapping("/save")
-	public void save(@RequestBody Users users) {
+	public void save(@RequestBody User users) {
 		userRepository.save(users);
 	}
 }
