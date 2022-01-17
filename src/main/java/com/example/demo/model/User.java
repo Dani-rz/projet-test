@@ -18,16 +18,17 @@ public class User implements Serializable , UserDetails {
    
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer userId;
+    private long userId;
     private String username;
     private String password;
-    public Integer getUserId() {
-        return userId;
-    }
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
-    public String getUsername() {
+   
+	public long getUserId() {
+		return userId;
+	}
+	public void setUserId(long userId) {
+		this.userId = userId;
+	}
+	public String getUsername() {
         return username;
     }
     @Override
