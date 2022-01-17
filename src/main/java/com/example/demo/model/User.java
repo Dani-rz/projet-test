@@ -1,6 +1,6 @@
 package com.example.demo.model;
 
-import java.io.Serializable;
+
 import java.util.Collection;
 
 import javax.persistence.Entity;
@@ -14,7 +14,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
 @Table(name = "USER")
-public class User implements Serializable , UserDetails {
+public class User implements UserDetails {
    
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
